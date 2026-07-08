@@ -1,0 +1,74 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.resolved
+
+# CocoaPods (not used, kept for safety)
+Pods/
+
+# Carthage (not used, kept for safety)
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code coverage & profiling
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+
+# Archives & IPA
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcarchive
+
+# Environment & secrets
+.env
+.env.*
+*.p8
+*.p12
+*.mobileprovision
+*.cer
+*.certSigningRequest
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & temp
+*.log
+tmp/
