@@ -57,3 +57,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Please follow the [Code of Conduct](CODE
 ## ⚠️ Disclaimer
 
 This is an independent, community-made app. It is **not affiliated with, endorsed by, or sponsored by ETECSA**. Codes may change at any time at the carrier's discretion.
+
+## 📚 Sources
+The codes were saved from the following sites:
+- https://galixpay.com/recargas-a-cuba/
+- https://www.fonoma.com/blog/codigos-ussd-cuba
+- https://www.etecsa.cu/es/taxonomy/term/1445
+
+## License
+
+[MIT](LICENSE) @albertolicea00
