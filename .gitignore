@@ -1,3 +1,5 @@
+.ignore/
+
 # macOS
 .DS_Store
 .AppleDouble
