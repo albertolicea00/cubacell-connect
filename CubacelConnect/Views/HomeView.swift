@@ -23,7 +23,7 @@ struct HomeView: View {
                 }
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("Cubacel Connect")
+            .navigationTitle("Cubacell Connect")
             .toolbarBackground(Color.brandNavy, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarColorScheme(.dark, for: .navigationBar)

@@ -1,6 +1,6 @@
-# Contributing to Cubacel Connect
+# Contributing to Cubacell Connect
 
-Thanks for your interest in improving Cubacel Connect! This document explains how to propose changes.
+Thanks for your interest in improving Cubacell Connect! This document explains how to propose changes.
 
 ## Ways to Contribute
 

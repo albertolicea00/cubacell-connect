@@ -2,7 +2,7 @@ Guidance for AI coding agents when working in this repository.
 
 ## Project Overview
 
-Cubacel Connect is a SwiftUI iPhone app (iOS 17+) that gives quick access to ETECSA (Cubacel) USSD service codes: balance queries, plan purchases, credit transfers and other utilities. The app hands codes to the system dialer — it performs no networking of its own.
+Cubacell Connect is a SwiftUI iPhone app (iOS 17+) that gives quick access to ETECSA (Cubacel) USSD service codes: balance queries, plan purchases, credit transfers and other utilities. The app hands codes to the system dialer — it performs no networking of its own.
 
 ## Build & Run
 

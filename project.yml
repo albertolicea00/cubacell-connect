@@ -14,7 +14,7 @@ targets:
     info:
       path: CubacelConnect/Info.plist
       properties:
-        CFBundleDisplayName: Cubacel Connect
+        CFBundleDisplayName: Cubacell Connect
         CFBundleShortVersionString: 1.0.0
         CFBundleVersion: "1"
         UILaunchScreen: {}
