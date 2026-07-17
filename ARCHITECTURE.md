@@ -40,7 +40,7 @@ There is **no networking, no persistence, no state beyond the UI**. The catalog 
 
 ## Components
 
-### Models (`CubacelConnect/Models/`)
+### Models (`CubacellConnect/Models/`)
 
 Plain `Codable` value types mirroring the JSON schema:
 
@@ -49,16 +49,16 @@ Plain `Codable` value types mirroring the JSON schema:
 - `USSDCode` — the code itself plus presentation metadata. `resolvedCode(input:)` substitutes the `{input}` placeholder with user-provided text (card number, phone number).
 - `USSDActionType` — `ussd` (dialed sequence) vs `call` (plain number). Drives the row badge icon and the detail button label; execution path is identical (both go through the dialer).
 
-### Services (`CubacelConnect/Services/`)
+### Services (`CubacellConnect/Services/`)
 
 - **`USSDCodeStore`** — `@Observable` class, loads and decodes `ussd_codes.json` from the bundle at init. Exposes `categories`, `codes`, and `codes(in:)` for category filtering. Injected once at app root via `.environment`. A missing or malformed catalog trips an `assertionFailure` in debug and renders an empty list in release — the file is bundled, so this only happens on developer error.
 - **`DialService`** — stateless enum. Builds `tel://` URLs and opens them. The one non-obvious rule of the whole app lives here: **`#` must be percent-encoded as `%23`** or `URL(string:)`/iOS rejects the sequence. Returns `false` when the device cannot place calls (iPad, simulator) instead of failing silently.
 
-### Theme (`CubacelConnect/Theme/`)
+### Theme (`CubacellConnect/Theme/`)
 
 Brand palette as `Color` extensions — navy `rgb(0, 0, 102)`, cyan `#09C`, plus adaptive black/white via `systemBackground`/`label`. `AppTheme.codeFont` provides the monospaced style for anything dialable. All color usage in views must go through these tokens; no ad-hoc colors.
 
-### Views (`CubacelConnect/Views/`)
+### Views (`CubacellConnect/Views/`)
 
 - **`HomeView`** — `NavigationStack` + grouped `List`, one section per category. Owns the `selectedCode` state that drives the detail sheet. Navy toolbar, cyan tint.
 - **`CodeRowView`** — pure function of a `USSDCode`: title, monospaced code, type badge (phone vs `#`).

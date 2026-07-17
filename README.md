@@ -1,4 +1,4 @@
-# Cubacel Connect
+# 🇨🇺CubaCell Connect
 
 An iPhone app to quickly access the **USSD service codes of ETECSA (Cubacel)**: check your balance, buy data/voice/SMS plans, transfer credit and more — all from a clean, organized list that hands the code straight to the system dialer.
 
@@ -15,7 +15,7 @@ An iPhone app to quickly access the **USSD service codes of ETECSA (Cubacel)**: 
 
 ## Code Catalog
 
-The catalog lives in [`CubacelConnect/Resources/ussd_codes.json`](CubacelConnect/Resources/ussd_codes.json). Highlights:
+The catalog lives in [`CubacellConnect/Resources/ussd_codes.json`](CubacellConnect/Resources/ussd_codes.json). Highlights:
 
 | Code | Purpose |
 | --- | --- |
@@ -43,10 +43,10 @@ The catalog lives in [`CubacelConnect/Resources/ussd_codes.json`](CubacelConnect
 ## Getting Started
 
 ```bash
-git clone https://github.com/albertolicea00/cuba-cell-connect.git
-cd cuba-cell-connect
+git clone https://github.com/albertolicea00/cubacell-connect.git
+cd cubacell-connect
 xcodegen generate
-open CubacelConnect.xcodeproj
+open CubacellConnect.xcodeproj
 ```
 
 Build and run on a device. **USSD dialing requires a physical iPhone with a Cubacel SIM** — the simulator cannot place calls.
@@ -54,7 +54,7 @@ Build and run on a device. **USSD dialing requires a physical iPhone with a Cuba
 ## Project Structure
 
 ```
-CubacelConnect/
+CubacellConnect/
 ├── App/          # App entry point
 ├── Models/       # USSDCode, USSDCategory, catalog decoding
 ├── Services/     # JSON catalog store, system dialer bridge
