@@ -1,46 +1,33 @@
-# 🇨🇺CubaCell Connect
+# 🇨🇺 CubaCell Connect
 
-An iPhone app to quickly access the **USSD service codes of ETECSA (Cubacel)**: check your balance, buy data/voice/SMS plans, transfer credit and more — all from a clean, organized list that hands the code straight to the system dialer.
+> The app is named **Cuba-cell** (with double "L") to avoid any legal conflicts or trademark issues with Cubacel.
 
-> Colors: deep navy `rgb(0, 0, 102)`, cyan `#09C`, black and white.
+[![Platform](https://img.shields.io/badge/platform-iOS%2017.0%2B-blue.svg)](https://developer.apple.com/ios/)
+[![Swift](https://img.shields.io/badge/swift-5.9%2B-orange.svg)](https://swift.org)
+[![Xcode](https://img.shields.io/badge/Xcode-15.0%2B-blue.svg)](https://developer.apple.com/xcode/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## Features
+An iPhone app to quickly access the **USSD service codes of ETECSA (Cubacel)** : check your balance, buy data/voice/SMS plans, transfer credit and more — all from a clean, organized list that hands the code straight to the system dialer.
+
+
+## ✨ Features
 
 - 📋 **Full USSD catalog** grouped by category: Balance & Plans, Purchases & Top-Up, Transfers, and Other Utilities.
 - 📞 **One-tap dialing** — the app opens the system dialer with the code prefilled (`#` correctly percent-encoded).
 - ⌨️ **Input-aware codes** — codes like `*662*{card}#` or `#31#{number}` ask for the missing part before dialing.
 - 📎 **Copy to clipboard** for any code.
 - 💡 **Mnemonics** — e.g. `328 = DAT`, `266 = BON`, `869 = VOZ` — the keypad letters spell the service name.
-- 🌗 Light and dark mode support.
+- 🌗 **Light and dark mode** support.
 
-## Code Catalog
+*The full USSD code catalog is dynamically loaded from our JSON configuration file [`CubacellConnect/Resources/ussd_codes.json`](CubacellConnect/Resources/ussd_codes.json), keeping the app lightweight and easy to update.* 📁
 
-The catalog lives in [`CubacellConnect/Resources/ussd_codes.json`](CubacellConnect/Resources/ussd_codes.json). Highlights:
+## 🛠️ Requirements
 
-| Code | Purpose |
-| --- | --- |
-| `*222#` | Main balance, voice/SMS/data resources and line validity |
-| `*222*328#` | Data plan balance and validity |
-| `*222*266#` | Promotional bonuses and USD plans |
-| `*222*869#` | Voice plan credit |
-| `*222*767#` | SMS plan credit |
-| `*222*264#` | Friends Plan (Plan Amigos) status |
-| `*222*468#` | Mobile data availability |
-| `*111#` | Postpaid / institutional balance |
-| `*133#` | Purchase menu (data, SMS, voice, bundles) |
-| `*234#` | Transfer menu (balance transfer, PIN change, Adelanta Saldo) |
-| `*662*{card}#` | Manual top-up with a scratch card |
-| `*99{number}` | Collect call (receiver pays) |
-| `#31#{number}` | Private call (hidden caller ID) |
-| `*#06#` | Show device IMEI |
+- 🍏 Xcode 15+
+- 📱 iOS 17.0+
+- ⚙️ [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`)
 
-## Requirements
-
-- Xcode 15+
-- iOS 17.0+
-- [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`)
-
-## Getting Started
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/albertolicea00/cubacell-connect.git
@@ -49,9 +36,9 @@ xcodegen generate
 open CubacellConnect.xcodeproj
 ```
 
-Build and run on a device. **USSD dialing requires a physical iPhone with a Cubacel SIM** — the simulator cannot place calls.
+Build and run on a device. **USSD dialing requires a physical iPhone with a Cubacel SIM** 📲 — the simulator cannot place calls.
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 CubacellConnect/
@@ -63,14 +50,10 @@ CubacellConnect/
 └── Resources/    # ussd_codes.json catalog
 ```
 
-## Contributing
+## 🤝 Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 This is an independent, community-made app. It is **not affiliated with, endorsed by, or sponsored by ETECSA**. Codes may change at any time at the carrier's discretion.
-
-## License
-
-[MIT](LICENSE) © 2026 Alberto Licea
