@@ -659,7 +659,8 @@ enum DirectoryDatabase {
     /// not just an item/tag identifier. Move this when a new schema version or a new host replaces
     /// it (see the release notes for `etecsa.database.v2.db`).
     
-    static let downloadURL = URL(string: "https://....")! // todo
+    static let downloadURL = URL(string: "https://archive.org/download/etecsa-directory/etecsa.database.v1.db")!
+    // static let downloadURL = URL(string: "https://github.com/albertolicea00/CubaCellConnect/releases/download/data/etecsa.database.v1.db")!
 
     private static let transientDestructor = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
 
